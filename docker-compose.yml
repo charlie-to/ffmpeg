@@ -8,3 +8,4 @@ services:
       - ./input:/srv/data # input folder : change it to your input folder
       - ./out:/srv/out # output folder : change it to your output folder
       - ./main.sh:/srv/main.sh
+    entrypoint: /srv/main.sh
