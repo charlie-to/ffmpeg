@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ffmpeg:
+    build: "."
+    container_name: ffmpeg
+    tty: true
+    volumes:
+      - ./input:/srv/data
+      - ./out:/srv/out
+      - ./main.sh:/srv/main.sh
