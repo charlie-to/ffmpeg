@@ -5,6 +5,6 @@ services:
     container_name: ffmpeg
     tty: true
     volumes:
-      - ./input:/srv/data
-      - ./out:/srv/out
+      - ./input:/srv/data # input folder : change it to your input folder
+      - ./out:/srv/out # output folder : change it to your output folder
       - ./main.sh:/srv/main.sh
